@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Herald - Digital Edition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;700;900&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="date-weather">
+                    <span id="current-date"></span>
+                    <span class="weather" id="weather-display">
+                        <i class="fas fa-sun" id="weather-icon"></i> <span id="weather-temp">Loading...</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="header-main">
+            <div class="container">
+                <div class="logo-section">
+                    <h1 class="newspaper-title">THE TIMES OF<br><span class="gurukul-name">Gurukul</span></h1>
+                    <p class="tagline">Your Voice, Your Stories, Your School</p>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <div class="container">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active"><span>Home</span></a></li>
+                    <li><a href="#sports-news" class="nav-link"><span>Sports News</span></a></li>
+                    <li><a href="#gurukul-news" class="nav-link"><span>Gurukul News</span></a></li>
+                    <li><a href="#events" class="nav-link"><span>Events</span></a></li>
+                    <li><a href="#games" class="nav-link"><span>Games</span></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Breaking News Ticker -->
+            <div class="breaking-news">
+                <div class="breaking-label">
+                    <i class="fas fa-bolt"></i>
+                    BREAKING
+                </div>
+                <div class="news-ticker">
+                    <div class="ticker-content">
+Good luck with your exams!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Section -->
+            <section class="hero-section">
+                <article class="featured-article">
+                    <a href="#" class="article-link" id="hero-article-link">
+                        <div class="article-image">
+                            <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Solar panels in village">
+                            <div class="article-overlay">
+                                <h2 class="article-title">How a Solar Grid Brought Light to Dharnai Village</h2>
+                                <p class="article-excerpt">In the village of Dharnai, the villagers had no reliable electric network. They used kerosene lamps and diesel generators. One morning, the village woke up to reliable electric network. The Greenspace India, teaming up with BASIX and CEED, built a solar powered micro-grid with 100 kw capacity. With lights in the evening to ensure continuous power, students were able to study after dark and women felt safe outside...</p>
+                                <div class="article-meta">
+                                    <span class="author">By Nirvan</span>
+                                    <span class="date">September 28, 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </section>
+ <!-- This Week's Games Section -->
+            <section class="games-section" id="games">
+                <h2 class="section-title"><i class="fas fa-gamepad"></i> This Week's Games <i class="fas fa-trophy"></i></h2>
+                <div class="games-grid">
+                    <!-- Word Search Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h3><i class="fas fa-search"></i> Word Search</h3>
+                            <span class="difficulty easy">Easy</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="word-search-grid" id="word-search-grid">
+                                <div class="grid-row">
+                                    <span data-row="0" data-col="0">S</span>
+                                    <span data-row="0" data-col="1">O</span>
+                                    <span data-row="0" data-col="2">L</span>
+                                    <span data-row="0" data-col="3">A</span>
+                                    <span data-row="0" data-col="4">R</span>
+                                    <span data-row="0" data-col="5">X</span>
+                                    <span data-row="0" data-col="6">M</span>
+                                    <span data-row="0" data-col="7">Q</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="1" data-col="0">C</span>
+                                    <span data-row="1" data-col="1">E</span>
+                                    <span data-row="1" data-col="2">N</span>
+                                    <span data-row="1" data-col="3">E</span>
+                                    <span data-row="1" data-col="4">R</span>
+                                    <span data-row="1" data-col="5">G</span>
+                                    <span data-row="1" data-col="6">Y</span>
+                                    <span data-row="1" data-col="7">W</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="2" data-col="0">I</span>
+                                    <span data-row="2" data-col="1">L</span>
+                                    <span data-row="2" data-col="2">I</span>
+                                    <span data-row="2" data-col="3">G</span>
+                                    <span data-row="2" data-col="4">H</span>
+                                    <span data-row="2" data-col="5">T</span>
+                                    <span data-row="2" data-col="6">Z</span>
+                                    <span data-row="2" data-col="7">E</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="3" data-col="0">E</span>
+                                    <span data-row="3" data-col="1">E</span>
+                                    <span data-row="3" data-col="2">V</span>
+                                    <span data-row="3" data-col="3">I</span>
+                                    <span data-row="3" data-col="4">L</span>
+                                    <span data-row="3" data-col="5">L</span>
+                                    <span data-row="3" data-col="6">A</span>
+                                    <span data-row="3" data-col="7">R</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="4" data-col="0">N</span>
+                                    <span data-row="4" data-col="1">C</span>
+                                    <span data-row="4" data-col="2">T</span>
+                                    <span data-row="4" data-col="3">R</span>
+                                    <span data-row="4" data-col="4">O</span>
+                                    <span data-row="4" data-col="5">W</span>
+                                    <span data-row="4" data-col="6">G</span>
+                                    <span data-row="4" data-col="7">T</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="5" data-col="0">C</span>
+                                    <span data-row="5" data-col="1">T</span>
+                                    <span data-row="5" data-col="2">R</span>
+                                    <span data-row="5" data-col="3">I</span>
+                                    <span data-row="5" data-col="4">C</span>
+                                    <span data-row="5" data-col="5">I</span>
+                                    <span data-row="5" data-col="6">E</span>
+                                    <span data-row="5" data-col="7">Y</span>
+                                </div>
+                                <div class="grid-row">
+                                    <span data-row="6" data-col="0">E</span>
+                                    <span data-row="6" data-col="1">R</span>
+                                    <span data-row="6" data-col="2">I</span>
+                                    <span data-row="6" data-col="3">D</span>
+                                    <span data-row="6" data-col="4">S</span>
+                                    <span data-row="6" data-col="5">T</span>
+                                    <span data-row="6" data-col="6">U</span>
+                                    <span data-row="6" data-col="7">D</span>
+                                </div>
+                            </div>
+                            <div class="word-list">
+                                <p><strong>Find these words:</strong></p>
+                                <div class="words">
+                                    <span class="word" data-word="SOLAR">SOLAR</span>
+                                    <span class="word" data-word="ENERGY">ENERGY</span>
+                                    <span class="word" data-word="LIGHT">LIGHT</span>
+                                    <span class="word" data-word="VILLAGE">VILLAGE</span>
+                                    <span class="word" data-word="GRID">GRID</span>
+                                    <span class="word" data-word="SCIENCE">SCIENCE</span>
+                                </div>
+                            </div>
+                            <div id="word-search-feedback" class="word-search-feedback"></div>
+                        </div>
+                    </div>
+
+                    <!-- Enhanced Math Quiz Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h3><i class="fas fa-calculator"></i> Quick Math</h3>
+                            <span class="difficulty medium">Medium</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="math-question">
+                                <p class="question-text">If a 100 kW solar grid powers 50 homes, how many watts does each home get on average?</p>
+                                <div class="math-input-grid">
+                                    <div class="math-equation">
+                                        <span>100,000W ÷ 50 = </span>
+                                        <div class="answer-input-section">
+                                            <input type="text" class="math-input-cell" maxlength="1" data-position="0">
+                                            <input type="text" class="math-input-cell" maxlength="1" data-position="1">
+                                            <input type="text" class="math-input-cell" maxlength="1" data-position="2">
+                                            <input type="text" class="math-input-cell" maxlength="1" data-position="3">
+                                            <span class="unit-label">W</span>
+                                        </div>
+                                    </div>
+                                    <button class="check-math-btn" onclick="checkMathAnswer()">Check Answer</button>
+                                </div>
+                                <div class="result-message" id="math-result"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Crossword Puzzle -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h3><i class="fas fa-th"></i> Mini Crossword</h3>
+                            <span class="difficulty hard">Hard</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="crossword-grid" id="crossword-grid">
+                                <div class="crossword-row">
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="0" data-col="0" data-clue="across1" data-position="0">
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="0" data-col="1" data-clue="across1" data-position="1">
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="0" data-col="2" data-clue="across1" data-position="2">
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="0" data-col="3" data-clue="across1" data-position="3">
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="0" data-col="4" data-clue="across1" data-position="4">
+                                </div>
+                                <div class="crossword-row">
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="1" data-col="1" data-clue="down1" data-position="1">
+                                    <div class="crossword-empty"></div>
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="1" data-col="4" data-clue="down2" data-position="1">
+                                </div>
+                                <div class="crossword-row">
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="2" data-col="1" data-clue="down1" data-position="2">
+                                    <div class="crossword-empty"></div>
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="2" data-col="4" data-clue="down2" data-position="2">
+                                </div>
+                                <div class="crossword-row">
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="3" data-col="1" data-clue="down1" data-position="3">
+                                    <div class="crossword-empty"></div>
+                                    <div class="crossword-empty"></div>
+                                    <input type="text" maxlength="1" class="crossword-cell" data-row="3" data-col="4" data-clue="down2" data-position="3">
+                                </div>
+                            </div>
+                            <div class="crossword-clues">
+                                <div class="clue-section">
+                                    <strong>Across:</strong>
+                                    <p>1. Renewable energy source (5)</p>
+                                </div>
+                                <div class="clue-section">
+                                    <strong>Down:</strong>
+                                    <p>1. Electrical network (4)</p>
+                                    <p>2. What students do after dark (5)</p>
+                                </div>
+                            </div>
+                            <div id="crossword-feedback" class="crossword-feedback"></div>
+                        </div>
+                    </div>
+
+                    <!-- Trivia Game -->
+                    <div class="game-card">
+                        <div class="game-header">
+                            <h3><i class="fas fa-question-circle"></i> School Trivia</h3>
+                            <span class="difficulty easy">Easy</span>
+                        </div>
+                        <div class="game-content">
+                            <div class="trivia-question">
+                                <p class="question-text">Which organizations collaborated to bring solar power to Dharnai village?</p>
+                                <div class="trivia-options">
+                                    <label class="trivia-option">
+                                        <input type="radio" name="trivia" value="wrong">
+                                        <span>NASA and ISRO</span>
+                                    </label>
+                                    <label class="trivia-option">
+                                        <input type="radio" name="trivia" value="correct">
+                                        <span>Greenspace India, BASIX and CEED</span>
+                                    </label>
+                                    <label class="trivia-option">
+                                        <input type="radio" name="trivia" value="wrong">
+                                        <span>Tesla and SolarCity</span>
+                                    </label>
+                                </div>
+                                <button class="submit-trivia" onclick="checkTrivia()">Submit Answer</button>
+                                <div class="trivia-result" id="trivia-result"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Advertisement Section -->
+            <section class="company-ad-section">
+                <div class="company-ad-banner">
+                    <div class="company-ad-content">
+                        <div class="company-logo">
+                            <i class="fas fa-microchip company-icon"></i>
+                            <h3>TechnoVibe Solutions</h3>
+                        </div>
+                        <div class="company-message">
+                            <h2>Powering Tomorrow's Technology Today</h2>
+                            <p>Leading provider of innovative software solutions and digital transformation services. From AI-powered applications to cutting-edge web development, we turn your vision into reality.</p>
+                            <div class="company-features">
+                                <span class="feature"><i class="fas fa-rocket"></i> AI & Machine Learning</span>
+                                <span class="feature"><i class="fas fa-globe"></i> Web Development</span>
+                                <span class="feature"><i class="fas fa-mobile-alt"></i> Mobile Apps</span>
+                                <span class="feature"><i class="fas fa-cloud"></i> Cloud Solutions</span>
+                            </div>
+                        </div>
+                        <div class="company-visual">
+                            <div class="tech-animation">
+                                <div class="circuit-line"></div>
+                                <div class="circuit-line"></div>
+                                <div class="circuit-line"></div>
+                                <div class="tech-node"></div>
+                                <div class="tech-node"></div>
+                                <div class="tech-node"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Article Modal -->
+    <div id="articleModal" class="article-modal">
+        <div class="modal-content">ƒ
+            <div class="modal-header">
+                <span class="close-modal">&times;</span>
+                <h2 id="modal-title">Article Title</h2>
+                <div class="modal-meta">
+                    <span id="modal-author">Author</span>
+                    <span id="modal-date">Date</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <img id="modal-image" src="" alt="" class="modal-article-image">
+                <div id="modal-content" class="modal-article-content">
+                    Article content will appear here...
+                </div>
+            </div>
+        </div>
+   </div>
+            <!-- Main Content Sections -->
+            <section class="sports-section" id="sports">
+        
+            <!-- Company Advertisement -->
+            <section class="company-ad-section">
+                <div class="company-ad-banner">
+                    <div class="company-ad-content">
+                        <div class="company-logo">
+                            <i class="fas fa-bolt"></i>
+                            <span class="company-name">TechnoVibe Solutions</span>
+                        </div>
+                        <div class="ad-main-content">
+                            <h3>Powering Tomorrow's Technology Today</h3>
+                            <p>Leading provider of renewable energy solutions and smart grid technology. From solar installations to energy management systems, we're building a sustainable future.</p>
+                            <div class="company-features">
+                                <div class="feature">
+                                    <i class="fas fa-solar-panel"></i>
+                                    <span>Solar Solutions</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-network-wired"></i>
+                                    <span>Smart Grids</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-leaf"></i>
+                                    <span>Eco-Friendly</span>
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-award"></i>
+                                    <span>Award Winning</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-visual">
+                            <div class="tech-graphic">
+                                <div class="circuit-pattern"></div>
+                                <div class="energy-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-ad-footer">
+                        <span class="partnership-text">Official Technology Partner of Gurukul Schools</span>
+                        <div class="contact-info">
+                            <span><i class="fas fa-phone"></i> +91 98765 43210</span>
+                            <span><i class="fas fa-globe"></i> www.technovibe.com</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sports News Section -->
+            <section class="sports-news-section" id="sports-news">
+                <h2 class="section-title"><i class="fas fa-flag-checkered"></i> Sports News <i class="fas fa-trophy"></i></h2>
+                <div class="news-grid">
+                    <article class="news-card featured-article">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Red Bull Racing F1">
+                        </div>
+                        <div class="card-content">
+                            <span class="category"><i class="fas fa-car"></i> FORMULA 1</span>
+                            <h3>Redbulls Surreal Performance in Azerbaijan</h3>
+                            <div class="article-subtitle">Baku - Max Verstappen's 6th Grand Slam</div>
+                            <p>Max Verstappen's 6th Grand Slam. A Grand Slam in motorsport is for when a driver wins the race from pole position, whilst setting the fastest lap of the race. Verstappen's dominant weekend showed his expertise and technical driving skill. What made this special is that it was his best performance at the Baku city championship.</p>
+                            <p>Verstappen won from pole in Baku to earn first place in the championship. He dominated qualifying, getting pole with a significant gap over second place McLaren.</p>
+                            <div class="sub-article">
+                                <h4>Yuki's Strongest Performance in Redbull</h4>
+                                <p>Max Verstappen ally Yuki Tsunoda delivered his best performance at the Baku city circuit, defending his position from behind, finishing sixth. What made this special is that it was his best performance at his home circuit going ahead of other drivers even his team mate.</p>
+                                <p>His position is that performance since joining Red Bull, they were best performing results and showed incredible progress in both speed and placement. He's position today. Finally, this change of music overtaking Verstappen.</p>
+                                <p>Schedule 14 Baku September 20-22 Azerbaijan Grand Prix circuit. Time and Pole position will happen before race circuit, grand and commercial statements even.</p>
+                            </div>
+                            <div class="card-meta">
+                                <span class="author"><i class="fas fa-user"></i> Sports</span>
+                                <span class="date"><i class="fas fa-calendar"></i> Article - Sports</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Gurukul News Section -->
+            <section class="gurukul-news-section" id="gurukul-news">
+                <h2 class="section-title"><i class="fas fa-flask"></i> Gurukul News <i class="fas fa-graduation-cap"></i></h2>
+                <div class="news-grid">
+                    <article class="news-card featured-article">
+                        <div class="card-image">
+                            <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="National Chemical Laboratory">
+                        </div>
+                        <div class="card-content">
+                            <span class="category"><i class="fas fa-atom"></i> AWESOME SCIENCE</span>
+                            <h3>Awesome Science</h3>
+                            <div class="article-subtitle">A day at the National Chemical Laboratory</div>
+                            <p>Under the supervision of Ms. Alka MYP 5 students got the opportunity to visited the national chemical laboratory, the visit offered enriching glimpses of practical applications of chemistry.</p>
+                            <div class="card-meta">
+                                <span class="author"><i class="fas fa-user-graduate"></i> Ms. Alka</span>
+                                <span class="date"><i class="fas fa-calendar"></i> MYP 5 Field Trip</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+           
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                     <h4>School Herald</h4>
+                    <p>The official student newspaper bringing you the latest news, sports, and events from our school community.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> herald@school.edu</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Room 201, Main Building</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Submit a Story</a></li>
+                        <li><a href="#">Join Our Team</a></li>
+                        <li><a href="#">Archive</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 School Herald. All rights reserved.</p>
+                <p>Student-run publication of [Your School Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
