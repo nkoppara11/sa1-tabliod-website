@@ -394,7 +394,6 @@ function simulateWeatherData(lat, lon) {
     const currentWeather = weatherConditions[Math.floor(Math.random() * weatherConditions.length)];
     updateWeatherDisplay(currentWeather);
 }
-}
 
 // Generate weather forecast
 function generateForecast() {
