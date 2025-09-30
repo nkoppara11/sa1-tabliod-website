@@ -473,7 +473,7 @@ function initNewsletterSignup() {
         <div id="newsletter-modal" class="modal" style="display: none;">
             <div class="modal-content">
                 <span class="close-modal">&times;</span>
-                <h3>Subscribe to School Herald</h3>
+                <h3>Subscribe to THE TIMES OF Gurukul</h3>
                 <p>Get the latest school news delivered to your inbox!</p>
                 <form id="newsletter-form">
                     <input type="email" placeholder="Enter your email" required>
@@ -572,7 +572,7 @@ function initNewsletterSignup() {
     // Form submission
     document.getElementById('newsletter-form').addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('Thank you for subscribing to School Herald!');
+        alert('Thank you for subscribing to THE TIMES OF Gurukul!');
         document.getElementById('newsletter-modal').style.display = 'none';
     });
 }
@@ -1247,4 +1247,3 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
- 
