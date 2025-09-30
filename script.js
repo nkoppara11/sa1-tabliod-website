@@ -42,13 +42,8 @@ function initScrollAnimations() {
 function initParallaxEffects() {
     window.addEventListener('scroll', () => {
         const scrolled = window.pageYOffset;
-        const header = document.querySelector('.header-main');
         
-        if (header) {
-            header.style.transform = `translateY(${scrolled * 0.3}px)`;
-        }
-        
-        // Parallax for card images
+        // Parallax for card images only (removed header parallax)
         document.querySelectorAll('.card-image img').forEach(img => {
             const rect = img.getBoundingClientRect();
             const speed = 0.1;
@@ -1252,3 +1247,4 @@ if ('serviceWorker' in navigator) {
             });
     });
 }
+ 
